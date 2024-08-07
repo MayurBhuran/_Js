@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-Querey selector</title>
+  <style>
+    .red-color {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="block">
+    <p class="paragraph">Welcome to draogonstone</p>
+  </nav>
+  <div class="block">
+    <h4>
+      hey you are in <span  style="color: blueviolet;" id="username"> draginstone</span></h4>
+    <p class="paragraph">in this there are lots of dragon and their eggs</p>
+    <pre><code>console.log('hey balaorien')</code></pre>
+  </div>
+
+  <script>
+    const el = document.getElementById("username");
+    el.innerText = "Kings landing";
+    el.setAttribute("aria",123);
+    el.classList.add("red-color");
+    el.style.textDecoration="underline"
+    el.parentElement.style.background = "grey";
+    console.log(el.id);
+    el.remove();
+
+  </script>
+
+</body>
+
+</html>
