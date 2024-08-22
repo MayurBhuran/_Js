@@ -43,6 +43,6 @@ console.log(person.firstname+' '+person.middlename+' '+person.lastname)
 
 
 
-console.log(typeof person);
+console.log(typeof '123'*'1');
 console.log(typeof age);
 console.log(typeof num2 );
